@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Počítačové Hry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="container-fluid text-center py-5">
+        <h1>🎮 Svet Počítačových Hier</h1>
+        <p>Vitaj v kyberpriestore hier</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg container-fluid">
+        <div class="container">
+            <a class="navbar-brand" href="#">🎮 GameWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#o-hrach">O hrách</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#top-hry">Top hier 2026</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#zhanre">Žánre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontakt">Zdroje</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+        <!-- ==================== CAROUSEL ==================== -->
+        <section class="mb-4 p-4">
+            <h2 class="mb-3">🖼️ Svet hier v obrazoch</h2>
+            <div id="gameCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <div class="carousel-placeholder d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="carousel-icon">🎮</div>
+                                <h3>Grand Theft Auto VI</h3>
+                                <p>Najočakávanejší titul roku 2026</p>
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="badge bg-danger">PS5 / PC</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-placeholder carousel-placeholder-2 d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="carousel-icon">🧙</div>
+                                <h3>The Witcher 4</h3>
+                                <p>Návrat do sveta Zaklínača</p>
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="badge bg-success">PC</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-placeholder carousel-placeholder-3 d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="carousel-icon">🔬</div>
+                                <h3>Half-Life 3</h3>
+                                <p>Legenda sa vracia</p>
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="badge bg-primary">PC</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ==================== O HRACH ==================== -->
+        <section id="o-hrach" class="mb-4 p-4">
+            <h2>O počítačových hrách</h2>
+            <p>Počítačové hry sú jednou z najpopulárnejších foriem zábavy na svete. Každý rok vychádza tisícky nových titulov pre rôzne platformy – PC, konzoly aj mobily.</p>
+            <p>Moderné hry ponúkajú neuveriteľnú grafiku, rozsiahle otvorené svety a online multiplayer zážitky, ktoré spájajú hráčov z celého sveta.</p>
+        </section>
+
+        <!-- ==================== TOP HRY + KARTY S MODAL ==================== -->
+        <section id="top-hry" class="mb-4 p-4">
+            <h2>Top najočakávanejších hier roku 2026</h2>
+            <p class="mb-4">Klikni na kartu a zisti viac o hre.</p>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
+
+                <!-- Karta 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalGTA" style="cursor:pointer;">
+                        <div class="ratio ratio-16x9 card-img-top d-flex align-items-center justify-content-center card-bg-1">
+                            <div class="text-center card-emoji-wrap">🚗</div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge mb-2">PS5</span>
+                            <h5 class="card-title">Grand Theft Auto VI</h5>
+                            <p class="card-text">Najočakávanejší open-world titul dekády od Rockstar Games.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karta 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalWitcher" style="cursor:pointer;">
+                        <div class="ratio ratio-16x9 card-img-top d-flex align-items-center justify-content-center card-bg-2">
+                            <div class="text-center card-emoji-wrap">🧙</div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge mb-2">PC</span>
+                            <h5 class="card-title">The Witcher 4</h5>
+                            <p class="card-text">CD Projekt Red sa vracia do sveta Zaklínača s novou hrdinkou.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karta 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalHL3" style="cursor:pointer;">
+                        <div class="ratio ratio-16x9 card-img-top d-flex align-items-center justify-content-center card-bg-3">
+                            <div class="text-center card-emoji-wrap">🔬</div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge mb-2">PC</span>
+                            <h5 class="card-title">Half-Life 3</h5>
+                            <p class="card-text">Valve konečne potvrdilo pokračovanie legendárnej série.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karta 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalRE" style="cursor:pointer;">
+                        <div class="ratio ratio-16x9 card-img-top d-flex align-items-center justify-content-center card-bg-4">
+                            <div class="text-center card-emoji-wrap">🧟</div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge mb-2">PS5 / PC</span>
+                            <h5 class="card-title">Resident Evil Requiem</h5>
+                            <p class="card-text">Nová kapitola hororovej série od Capcomu.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== ŽÁNRE ==================== -->
+        <section id="zhanre" class="mb-4 p-4">
+            <h2>Herné žánre a hodnotenia</h2>
+
+            <div class="table-responsive mt-3">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Žáner</th>
+                            <th>Príklad hry</th>
+                            <th>Hodnotenie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RPG</td>
+                            <td>Elden Ring</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>FPS</td>
+                            <td>Counter-Strike 2</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Open World</td>
+                            <td>Cyberpunk 2077</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Strategy</td>
+                            <td>Age of Empires IV</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ==================== ACCORDION / FAQ ==================== -->
+        <section id="faq" class="mb-4 p-4">
+            <h2 class="mb-3">❓ Časté otázky (FAQ)</h2>
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Ktorá platforma je najlepšia na hranie v roku 2026?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Záleží na tvojich preferenciách. <strong>PC</strong> ponúka najväčší výber hier a možnosť upgradu hardvéru. <strong>PS5</strong> má exkluzívne tituly a pohodlné hranie na gauči. Pre casual hráčov je skvelou voľbou aj <strong>Nintendo Switch 2</strong>.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Kedy vychádza GTA VI?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Grand Theft Auto VI je plánované na rok 2026 pre PS5 a Xbox Series X. PC verzia by mala nasledovať neskôr. Rockstar Games potvrdil Miami ako hlavné dejisko hry.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Čo je rozdiel medzi RPG a Open World hrami?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <strong>RPG (Role-Playing Game)</strong> sa zameriava na vývoj postavy, príbeh a rozhodnutia hráča. <strong>Open World</strong> je skôr o slobode pohybu v rozsiahlom hernom svete. Mnohé moderné hry kombinujú oba prvky – napríklad Elden Ring alebo Cyberpunk 2077.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            Kde kúpiť hry najlacnejšie?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Najlepšie miesta na nákup hier za výhodné ceny sú <strong>Steam</strong> (časté výpredaje), <strong>Epic Games Store</strong> (týždenné zadarmo hry) a <strong>Humble Bundle</strong>. Na PS5 odporúčame sledovať PlayStation Store akcie.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== ZDROJE + TOAST ==================== -->
+        <section id="kontakt" class="mb-4 p-4">
+            <h2>Použité zdroje</h2>
+            <p>Chcete sa dozvedieť viac o hrách? Navštívte tieto stránky:</p>
+            <ol>
+                <li><a href="https://store.steampowered.com" target="_blank">Steam</a></li>
+                <li><a href="https://www.playstation.com/sk-sk/playstation-app/" target="_blank">PlayStation App</a></li>
+                <li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+            </ol>
+            <button id="btnToast" class="btn btn-primary mt-3">🔔 Prihlásiť sa na novinky</button>
+        </section>
+
+    </main>
+
+    <footer class="container-fluid text-center py-4">
+        <p>© 2026 Svet Počítačových Hier | Vytvorila: Julia Pichkar</p>
+    </footer>
+
+    <!-- ==================== MODALS ==================== -->
+
+    <!-- Modal GTA VI -->
+    <div class="modal fade" id="modalGTA" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">🚗 Grand Theft Auto VI</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Žáner:</strong> Open World / Action</p>
+                    <p><strong>Vývojár:</strong> Rockstar Games</p>
+                    <p><strong>Platforma:</strong> PS5, Xbox Series X, PC</p>
+                    <p><strong>Plánované vydanie:</strong> 2026</p>
+                    <hr>
+                    <p>GTA VI sa odohráva v meste Vice City (Miami) a prináša prvú hlavnú hrdinku v histórii série. Očakáva sa masívny otvorený svet, vylepšená fyzika a online multiplayer s novými možnosťami.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavrieť</button>
+                    <a href="https://www.rockstargames.com" target="_blank" class="btn btn-primary">Oficiálna stránka</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal The Witcher 4 -->
+    <div class="modal fade" id="modalWitcher" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">🧙 The Witcher 4</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Žáner:</strong> RPG / Fantasy</p>
+                    <p><strong>Vývojár:</strong> CD Projekt Red</p>
+                    <p><strong>Platforma:</strong> PC, PS5, Xbox Series X</p>
+                    <p><strong>Stav:</strong> V vývoji</p>
+                    <hr>
+                    <p>Nová kapitola série Zaklínač prináša novú protagonistku – Ciri. Hra beží na Unreal Engine 5 a sľubuje ešte rozsiahlejší otvorený svet ako predchodca.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavrieť</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Half-Life 3 -->
+    <div class="modal fade" id="modalHL3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">🔬 Half-Life 3</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Žáner:</strong> FPS / Sci-Fi</p>
+                    <p><strong>Vývojár:</strong> Valve</p>
+                    <p><strong>Platforma:</strong> PC</p>
+                    <p><strong>Stav:</strong> Potvrdené</p>
+                    <hr>
+                    <p>Po rokoch čakania Valve oficiálne potvrdilo Half-Life 3. Gordon Freeman sa vracia v dobrodružstve, ktoré nadväzuje na udalosti Half-Life: Alyx.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavrieť</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Resident Evil -->
+    <div class="modal fade" id="modalRE" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">🧟 Resident Evil Requiem</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Žáner:</strong> Horror / Survival</p>
+                    <p><strong>Vývojár:</strong> Capcom</p>
+                    <p><strong>Platforma:</strong> PS5, PC</p>
+                    <p><strong>Stav:</strong> Oznámené</p>
+                    <hr>
+                    <p>Capcom pokračuje v hororovej sérii s novým príbehom a pohľadom z prvej osoby. Requiem sľubuje návrat k atmosférickému hororu so silným príbehom.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavrieť</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST ==================== -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="gameToast" class="toast" role="alert">
+            <div class="toast-header">
+                <strong class="me-auto">🎮 GameWorld</strong>
+                <small>Práve teraz</small>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                ✅ Úspešne si sa prihlásil/a na herné novinky!
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
