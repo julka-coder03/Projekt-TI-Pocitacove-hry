@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg container-fluid">
         <div class="container">
-            <a class="navbar-brand" href="#">🎮 GameWorld</a>
+            <a class="navbar-brand" href="#">GameWorld</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,7 +36,7 @@
 
         <!-- ==================== CAROUSEL ==================== -->
         <section class="mb-4 p-4">
-            <h2 class="mb-3">🖼️ Svet hier v obrazoch</h2>
+            <h2 class="mb-3">Svet hier v obrazoch</h2>
             <div id="gameCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="0" class="active"></button>
@@ -47,7 +47,7 @@
                     <div class="carousel-item active">
                         <div class="carousel-placeholder d-flex align-items-center justify-content-center">
                             <div class="text-center">
-                                <div class="carousel-icon">🎮</div>
+                                <div class="carousel-icon">🚔</div>
                                 <h3>Grand Theft Auto VI</h3>
                                 <p>Najočakávanejší titul roku 2026</p>
                             </div>
@@ -97,72 +97,63 @@
             <p>Moderné hry ponúkajú neuveriteľnú grafiku, rozsiahle otvorené svety a online multiplayer zážitky, ktoré spájajú hráčov z celého sveta.</p>
         </section>
 
-        <!-- ==================== TOP HRY + KARTY S MODAL ==================== -->
-        <section id="top-hry" class="mb-4 p-4">
-            <h2>Top najočakávanejších hier roku 2026</h2>
-            <p class="mb-4">Klikni na kartu a zisti viac o hre.</p>
+       <!-- ==================== TOP HRY + KARTY S MODAL ==================== -->
+<section id="top-hry" class="mb-4 p-4">
+    <h2>Top najočakávanejších hier roku 2026</h2>
+    <p class="mb-4">Klikni na kartu a zisti viac o hre.</p>
 
-            <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
 
-                <!-- Karta 1 -->
-                <div class="col">
-                    <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalGTA" style="cursor:pointer;">
-                        <div class="ratio ratio-16x9 card-img-top d-flex align-items-center justify-content-center card-bg-1">
-                            <div class="text-center card-emoji-wrap">🚗</div>
-                        </div>
-                        <div class="card-body">
-                            <span class="badge mb-2">PS5</span>
-                            <h5 class="card-title">Grand Theft Auto VI</h5>
-                            <p class="card-text">Najočakávanejší open-world titul dekády od Rockstar Games.</p>
-                        </div>
-                    </div>
+        <!-- Karta 1 -->
+        <div class="col">
+            <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalGTA" style="cursor:pointer;">
+                <img src="assets/gta.jpg" alt="GTA VI" class="card-img-top" style="height:300px; object-fit:cover; object-position:center;">
+                <div class="card-body">
+                    <span class="badge mb-2">PS5</span>
+                    <h5 class="card-title">Grand Theft Auto VI</h5>
+                    <p class="card-text">Najočakávanejší open-world titul dekády od Rockstar Games.</p>
                 </div>
-
-                <!-- Karta 2 -->
-                <div class="col">
-                    <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalWitcher" style="cursor:pointer;">
-                        <div class="ratio ratio-16x9 card-img-top d-flex align-items-center justify-content-center card-bg-2">
-                            <div class="text-center card-emoji-wrap">🧙</div>
-                        </div>
-                        <div class="card-body">
-                            <span class="badge mb-2">PC</span>
-                            <h5 class="card-title">The Witcher 4</h5>
-                            <p class="card-text">CD Projekt Red sa vracia do sveta Zaklínača s novou hrdinkou.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Karta 3 -->
-                <div class="col">
-                    <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalHL3" style="cursor:pointer;">
-                        <div class="ratio ratio-16x9 card-img-top d-flex align-items-center justify-content-center card-bg-3">
-                            <div class="text-center card-emoji-wrap">🔬</div>
-                        </div>
-                        <div class="card-body">
-                            <span class="badge mb-2">PC</span>
-                            <h5 class="card-title">Half-Life 3</h5>
-                            <p class="card-text">Valve konečne potvrdilo pokračovanie legendárnej série.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Karta 4 -->
-                <div class="col">
-                    <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalRE" style="cursor:pointer;">
-                        <div class="ratio ratio-16x9 card-img-top d-flex align-items-center justify-content-center card-bg-4">
-                            <div class="text-center card-emoji-wrap">🧟</div>
-                        </div>
-                        <div class="card-body">
-                            <span class="badge mb-2">PS5 / PC</span>
-                            <h5 class="card-title">Resident Evil Requiem</h5>
-                            <p class="card-text">Nová kapitola hororovej série od Capcomu.</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </section>
+        </div>
 
+        <!-- Karta 2 -->
+        <div class="col">
+            <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalWitcher" style="cursor:pointer;">
+                <img src="assets/the-witcher-4.webp" alt="The Witcher 4" class="card-img-top" style="height:300px; object-fit:cover; object-position:top;">
+                <div class="card-body">
+                    <span class="badge mb-2">PC</span>
+                    <h5 class="card-title">The Witcher 4</h5>
+                    <p class="card-text">CD Projekt Red sa vracia do sveta Zaklínača s novou hrdinkou.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Karta 3 -->
+        <div class="col">
+            <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalHL3" style="cursor:pointer;">
+                <img src="assets/half-life-3-pc-steam.jpg" alt="Half-Life 3" class="card-img-top" style="height:300px; object-fit:cover; object-position:center;">
+                <div class="card-body">
+                    <span class="badge mb-2">PC</span>
+                    <h5 class="card-title">Half-Life 3</h5>
+                    <p class="card-text">Valve konečne potvrdilo pokračovanie legendárnej série.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Karta 4 -->
+        <div class="col">
+            <div class="card h-100 shadow game-card" data-bs-toggle="modal" data-bs-target="#modalRE" style="cursor:pointer;">
+                <img src="assets/RE.jpg" alt="Resident Evil Requiem" class="card-img-top" style="height:300px; object-fit:cover; object-position:center;">
+                <div class="card-body">
+                    <span class="badge mb-2">PS5 / PC</span>
+                    <h5 class="card-title">Resident Evil Requiem</h5>
+                    <p class="card-text">Nová kapitola hororovej série od Capcomu.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
         <!-- ==================== ŽÁNRE ==================== -->
         <section id="zhanre" class="mb-4 p-4">
             <h2>Herné žánre a hodnotenia</h2>

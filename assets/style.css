@@ -363,22 +363,25 @@ ul, ol {
 
 .table thead th {
     background-color: var(--color-accent);
-    color: var(--color-bg);
+    color: color : #ffffff !important;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #1a0033;
-    color: var(--color-text-muted);
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #110022 !important;
+    color: #e0e0ff !important;
 }
 
-.table-hover tbody tr {
-    transition: background-color 0.2s ease;
+.table tbody tr {
+    background-color: #110022 !important;
+    color: #e0e0ff !important;
 }
 
-.table-hover tbody tr:hover {
-    background-color: #2a0044;
-    color: #ffffff;
+.table td, .table th {
+    border-color: var(--color-border) !important;
+    background-color: transparent !important;
+    color: #e0e0ff !important;
 }
+
 
 /* =============================================
    OBRÁZOK
